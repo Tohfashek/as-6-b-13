@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Design Pro Tool",
+    "description": "Premium design assets for your creative projects based on Figma requirements.",
+    "price": 45,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "Best Seller",
+    "features": ["100+ Templates", "Cloud Sync", "Figma Ready"],
+    "icon": "/assets/products/design-tool.png"
+  },
+  {
+    "id": 2,
+    "name": "Operation Manager",
+    "description": "Streamline your business operations and team tasks effectively.",
+    "price": 30,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "Trending",
+    "features": ["Task Tracking", "Team Chat", "Analytics"],
+    "icon": "/assets/products/operation.png"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Builder",
+    "description": "Showcase your work with professional and responsive layouts.",
+    "price": 25,
+    "period": "one-time",
+    "tag": "Trusted",
+    "tagType": "Must Have",
+    "features": ["SEO Ready", "Mobile Friendly", "Custom Domain"],
+    "icon": "/assets/products/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "E-commerce Cart",
+    "description": "Manage your online shop inventory and shopping cart effortlessly.",
+    "price": 50,
+    "period": "monthly",
+    "tag": "Hot",
+    "tagType": "Pro Choice",
+    "features": ["Secure Payment", "Inventory Management"],
+    "icon": "/public/assets/products/shopping-cart.png"
+  },
+  {
+    "id": 5,
+    "name": "Social Media Kit",
+    "description": "Automate your social media posts and increase engagement.",
+    "price": 20,
+    "period": "monthly",
+    "tag": "Essential",
+    "tagType": "Top Rated",
+    "features": ["Auto Scheduler", "Ads Manager"],
+    "icon": "/assets/products/social-media.png"
+  },
+  {
+    "id": 6,
+    "name": "Creative Writing AI",
+    "description": "Generate high-quality blog posts and articles in seconds with AI.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "Essential",
+    "features": ["Plagiarism Check", "Multi-language"],
+    "icon": "/assets/products/writing_2327400 1.png"
+  }
+]
