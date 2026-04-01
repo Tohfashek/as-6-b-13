@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Navber from "./components/navber";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -35,42 +36,34 @@ const App = () => {
     <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
       <ToastContainer autoClose={1500} />
 
-      {/* --- Navbar --- */}
-      <nav className="flex justify-between items-center px-6 md:px-20 py-5 bg-white border-b sticky top-0 z-50 shadow-sm">
-        <div className="flex items-center gap-3">
-          <img
-            src="/assets/products/rocket.png"
-            alt="Logo"
-            className="w-10 h-10"
-          />
-          <h1 className="text-2xl font-black tracking-tight text-purple-700">
-            DigiTools
-          </h1>
-        </div>
-        <div className="flex items-center gap-10">
-          <ul className="hidden md:flex gap-8 font-semibold text-gray-600">
-            <li className="hover:text-purple-600 cursor-pointer transition">
-              Home
-            </li>
-            <li className="hover:text-purple-600 cursor-pointer transition">
-              Tools
-            </li>
-          </ul>
-          {/* Cart Icon with Count */}
-          <div
-            className="relative cursor-pointer group"
-            onClick={() => setView("cart")}
-          >
-            <span className="text-3xl group-hover:scale-110 transition-transform block">
-              🛒
-            </span>
-            <span className="absolute -top-2 -right-2 bg-purple-600 text-white text-[10px] font-bold rounded-full w-6 h-6 flex items-center justify-center border-2 border-white">
-              {cart.length}
-            </span>
+	  {/* --- Navbar --- */}
+<Navber cart={cart} setView={setView}></Navber>
+
+	        {/* --- Stats Section --- */}
+      <section className="bg-purple-700 py-16">
+        <div className="container mx-auto flex flex-wrap justify-around text-white text-center gap-8">
+          <div>
+            <h2 className="text-5xl font-black">50K+</h2>
+            <p className="text-purple-200 mt-2 uppercase tracking-widest text-sm">
+              Active Users
+            </p>
+          </div>
+          <div>
+            <h2 className="text-5xl font-black">200+</h2>
+            <p className="text-purple-200 mt-2 uppercase tracking-widest text-sm">
+              Premium Tools
+            </p>
+          </div>
+          <div>
+            <h2 className="text-5xl font-black">4.9</h2>
+            <p className="text-purple-200 mt-2 uppercase tracking-widest text-sm">
+              User Ratings
+            </p>
           </div>
         </div>
-      </nav>
+      </section>
 
+      
       {/* --- Banner Section --- */}
       <header className="container mx-auto px-6 md:px-20 py-20 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 space-y-8 text-center md:text-left">
@@ -101,29 +94,7 @@ const App = () => {
         </div>
       </header>
 
-      {/* --- Stats Section --- */}
-      <section className="bg-purple-700 py-16">
-        <div className="container mx-auto flex flex-wrap justify-around text-white text-center gap-8">
-          <div>
-            <h2 className="text-5xl font-black">50K+</h2>
-            <p className="text-purple-200 mt-2 uppercase tracking-widest text-sm">
-              Active Users
-            </p>
-          </div>
-          <div>
-            <h2 className="text-5xl font-black">200+</h2>
-            <p className="text-purple-200 mt-2 uppercase tracking-widest text-sm">
-              Premium Tools
-            </p>
-          </div>
-          <div>
-            <h2 className="text-5xl font-black">4.9</h2>
-            <p className="text-purple-200 mt-2 uppercase tracking-widest text-sm">
-              User Ratings
-            </p>
-          </div>
-        </div>
-      </section>
+
 
       {/* --- Main Toggling Section --- */}
       <main className="container mx-auto px-6 md:px-20 py-20">
