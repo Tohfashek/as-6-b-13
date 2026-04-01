@@ -241,6 +241,57 @@ const App = () => {
         )}
       </main>
 
+      {/* --- Get Started In 3 Steps Section --- */}
+<section className="py-20 bg-white">
+  <div className="container mx-auto px-6 text-center">
+    {/* Section Title */}
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-16">
+      Get Started In 3 Steps
+    </h2>
+
+    {/* Steps Container */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+      
+      {/* Step 1 */}
+      <div className="flex flex-col items-center">
+        <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-gray-100 relative">
+          <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-bold">01</span>
+          <span className="text-2xl"><img src="public/assets/user.png" alt="" /></span> {/* আপনি এখানে Lucide Icon বা FontAwesome ও ব্যবহার করতে পারেন */}
+        </div>
+        <h3 className="text-xl font-bold mb-3">Create Account</h3>
+        <p className="text-gray-500 text-sm leading-relaxed max-w-[200px]">
+          Sign up for free in seconds. No credit card required to get started.
+        </p>
+      </div>
+
+      {/* Step 2 */}
+      <div className="flex flex-col items-center">
+        <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-gray-100 relative">
+          <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-bold">02</span>
+          <span className="text-2xl"><img src="public/assets/package.png" alt="" /></span>
+        </div>
+        <h3 className="text-xl font-bold mb-3">Choose Products</h3>
+        <p className="text-gray-500 text-sm leading-relaxed max-w-[200px]">
+          Browse our catalog and select the tools that fit your needs.
+        </p>
+      </div>
+
+      {/* Step 3 */}
+      <div className="flex flex-col items-center">
+        <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-gray-100 relative">
+          <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-bold">03</span>
+          <span className="text-2xl">public/assets/products/rocket.png</span>
+        </div>
+        <h3 className="text-xl font-bold mb-3">Start Creating</h3>
+        <p className="text-gray-500 text-sm leading-relaxed max-w-[200px]">
+          Download and start using your premium tools immediately.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
       {/* --- Footer --- */}
       <footer className="bg-gray-900 text-gray-400 py-20 px-10 text-center mt-20">
         <div className="flex justify-center items-center gap-3 mb-6">
