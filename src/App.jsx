@@ -344,28 +344,92 @@ const App = () => {
 
   </div>
 </section>
-     
-     
-     
-     <footer className="bg-gray-900 text-gray-400 py-20 px-10 text-center mt-20">
-        <div className="flex justify-center items-center gap-3 mb-6">
-          <img
-            src="/assets/products/rocket.png"
-            alt="Logo"
-            className="w-10 h-10 brightness-200"/>
-            
-          <h2 className="text-white text-3xl font-black tracking-tight">
-            DigiTools
-          </h2>
+
+<section className="bg-purple-800 py-12 px-4 text-center text-white rounded-2xl mx-4 my-8">
+        <h2 className="text-3xl font-bold">Ready To Transform Your Workflow?</h2>
+        <p className="my-4 opacity-80">Start your free trial today.</p>
+        <div className="flex justify-center gap-4">
+          <button className="bg-white text-purple-800 px-6 py-2 rounded-full font-bold">Explore</button>
+          <button className="border border-white px-6 py-2 rounded-full">Pricing</button>
         </div>
-        <p className="text-lg max-w-md mx-auto mb-10 leading-relaxed italic">
-          "The best place to find premium tools for your next big digital
-          empire."
+      </section>
+
+      
+      <footer className="bg-[#0b0f1a] text-gray-400 py-16 px-6">
+  <div className="max-w-7xl mx-auto">
+    
+    {/* Main Content Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+      
+      {/* 1. Brand Section */}
+      <div className="lg:col-span-2">
+        <h2 className="text-white text-2xl font-bold mb-4 flex items-center">
+          <span className="text-orange-500 mr-2 text-2xl">●</span> DigiTools
+        </h2>
+        <p className="text-sm leading-relaxed max-w-xs">
+          Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.
         </p>
-        <div className="border-t border-gray-800 pt-10 mt-10 text-sm font-medium">
-          &copy; 2026 DigiTools Platform. Designed with ❤️ for Builders.
+      </div>
+
+      {/* 2. Product Links */}
+      <div>
+        <h4 className="text-white font-semibold mb-4">Product</h4>
+        <ul className="space-y-2 text-sm">
+          <li><a href="#" className="hover:text-white transition">Features</a></li>
+          <li><a href="#" className="hover:text-white transition">Pricing</a></li>
+          <li><a href="#" className="hover:text-white transition">Templates</a></li>
+          <li><a href="#" className="hover:text-white transition">Integrations</a></li>
+        </ul>
+      </div>
+
+      {/* 3. Company & Resources Links */}
+      <div>
+        <h4 className="text-white font-semibold mb-4">Company</h4>
+        <ul className="space-y-2 text-sm mb-6">
+          <li><a href="#" className="hover:text-white transition">About</a></li>
+          <li><a href="#" className="hover:text-white transition">Blog</a></li>
+          <li><a href="#" className="hover:text-white transition">Careers</a></li>
+          <li><a href="#" className="hover:text-white transition">Press</a></li>
+        </ul>
+        
+        <h4 className="text-white font-semibold mb-4">Resources</h4>
+        <ul className="space-y-2 text-sm">
+          <li><a href="#" className="hover:text-white transition">Documentation</a></li>
+          <li><a href="#" className="hover:text-white transition">Help Center</a></li>
+          <li><a href="#" className="hover:text-white transition">Community</a></li>
+          <li><a href="#" className="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+
+      {/* 4. Social Links */}
+      <div>
+        <h4 className="text-white font-semibold mb-4">Social Links</h4>
+        <div className="flex space-x-3">
+          {/* Icons represent Instagram, Facebook, X/Twitter */}
+          <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-500 transition cursor-pointer text-white text-xs"><img src="public/assets/products/instagram.png" alt="" /></div>
+          <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-500 transition cursor-pointer text-white text-xs"><img src="public/assets/products/x.png" alt="" /></div>
+          <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-500 transition cursor-pointer text-white text-xs"><img src="public/assets/products/x.png" alt="" /></div>
         </div>
-      </footer>
+      </div>
+
+    </div>
+
+    {/* Bottom copyright & Links bar */}
+    <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-[11px]">
+      <p>© 2026 DigiTools. All rights reserved.</p>
+      <div className="flex space-x-6 mt-4 md:mt-0">
+        <a href="#" className="hover:text-white transition">Privacy Policy</a>
+        <a href="#" className="hover:text-white transition">Terms of Service</a>
+        <a href="#" className="hover:text-white transition">Cookies</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+     
+     
+     
+     
    
 
   </div>
