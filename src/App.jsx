@@ -256,7 +256,7 @@ const App = () => {
       <div className="flex flex-col items-center">
         <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 shadow-sm border border-gray-100 relative">
           <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-bold">01</span>
-          <span className="text-2xl"><img src="public/assets/user.png" alt="" /></span> {/* আপনি এখানে Lucide Icon বা FontAwesome ও ব্যবহার করতে পারেন */}
+          <span className="text-2xl"><img src="public/assets/user.png" alt="" /></span>
         </div>
         <h3 className="text-xl font-bold mb-3">Create Account</h3>
         <p className="text-gray-500 text-sm leading-relaxed max-w-[200px]">
@@ -292,14 +292,68 @@ const App = () => {
   </div>
 </section>
 
-      {/* --- Footer --- */}
-      <footer className="bg-gray-900 text-gray-400 py-20 px-10 text-center mt-20">
+<section className="bg-gray-50 py-12 px-4 font-sans">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+    
+    {/* Starter Card */}
+    <div className="bg-white p-8 rounded-[2.5rem] shadow-sm border border-gray-100 flex flex-col">
+      <h3 className="text-xl font-bold text-gray-900">Starter</h3>
+      <p className="text-gray-500 text-sm mb-4">Perfect for getting started</p>
+      <div className="text-4xl font-bold mb-6">$0<span className="text-lg font-normal text-gray-400">/Month</span></div>
+      <ul className="space-y-3 mb-8 text-gray-700 flex-grow">
+        <li>✓ Access to 10 free tools</li>
+        <li>✓ Basic templates</li>
+        <li>✓ Community support</li>
+        <li>✓ 1 project per month</li>
+      </ul>
+      <button className="w-full py-3 bg-[#450868] text-white rounded-full font-bold hover:opacity-90 transition">Get Started Free</button>
+    </div>
+
+    {/* Pro Card (Full Pink) */}
+    <div className="bg-[#450868] text-white p-8 rounded-[2.5rem] shadow-xl relative md:scale-105 flex flex-col">
+      <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-[#450868] px-4 py-0.5 rounded-full text-xs font-bold shadow-sm">Most Popular</div>
+      <h3 className="text-xl font-bold">Pro</h3>
+      <p className="opacity-90 text-sm mb-4">Best for professionals</p>
+      <div className="text-4xl font-bold mb-6">$29<span className="text-lg font-normal opacity-70">/Month</span></div>
+      <ul className="space-y-3 mb-8 flex-grow">
+        <li>✓ Access to all premium tools</li>
+        <li>✓ Unlimited templates</li>
+        <li>✓ Priority support</li>
+        <li>✓ Unlimited projects</li>
+        <li>✓ Cloud sync</li>
+        <li>✓ Advanced analytics</li>
+      </ul>
+      <button className="w-full py-3 bg-white text-[#450868] rounded-full font-bold hover:bg-gray-50 transition">Start Pro Trial</button>
+    </div>
+
+    {/* Enterprise Card */}
+    <div className="bg-white p-8 rounded-[2.5rem] shadow-sm border border-gray-100 flex flex-col">
+      <h3 className="text-xl font-bold text-gray-900">Enterprise</h3>
+      <p className="text-gray-500 text-sm mb-4">For teams and businesses</p>
+      <div className="text-4xl font-bold mb-6">$99<span className="text-lg font-normal text-gray-400">/Month</span></div>
+      <ul className="space-y-3 mb-8 text-gray-700 flex-grow">
+        <li>✓ Everything in Pro</li>
+        <li>✓ Team collaboration</li>
+        <li>✓ Custom integrations</li>
+        <li>✓ Dedicated support</li>
+        <li>✓ SLA guarantee</li>
+        <li>✓ Custom branding</li>
+      </ul>
+      <button className="w-full py-3 bg-[#450868] text-white rounded-full font-bold hover:opacity-90 transition">Contact Sales</button>
+    </div>
+
+  </div>
+</section>
+     
+     
+     
+     <footer className="bg-gray-900 text-gray-400 py-20 px-10 text-center mt-20">
         <div className="flex justify-center items-center gap-3 mb-6">
           <img
             src="/assets/products/rocket.png"
             alt="Logo"
-            className="w-10 h-10 brightness-200"
-          />
+            className="w-10 h-10 brightness-200"/>
+            
           <h2 className="text-white text-3xl font-black tracking-tight">
             DigiTools
           </h2>
@@ -312,7 +366,13 @@ const App = () => {
           &copy; 2026 DigiTools Platform. Designed with ❤️ for Builders.
         </div>
       </footer>
-    </div>
+   
+
+  </div>
+
+
+      
+     
   );
 };
 
