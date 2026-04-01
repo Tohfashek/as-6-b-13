@@ -405,7 +405,7 @@ const App = () => {
       <div>
         <h4 className="text-white font-semibold mb-4">Social Links</h4>
         <div className="flex space-x-3">
-          {/* Icons represent Instagram, Facebook, X/Twitter */}
+          {/* Icons */}
           <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-500 transition cursor-pointer text-white text-xs"><img src="public/assets/products/instagram.png" alt="" /></div>
           <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-500 transition cursor-pointer text-white text-xs"><img src="public/assets/products/x.png" alt="" /></div>
           <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-500 transition cursor-pointer text-white text-xs"><img src="public/assets/products/x.png" alt="" /></div>
