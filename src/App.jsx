@@ -36,10 +36,10 @@ const App = () => {
     <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
       <ToastContainer autoClose={1500} />
 
-	  {/* --- Navbar --- */}
-<Navber cart={cart} setView={setView}></Navber>
+      {/* --- Navbar --- */}
+      <Navber cart={cart} setView={setView}></Navber>
 
-	        {/* --- Stats Section --- */}
+      {/* --- Stats Section --- */}
       <section className="bg-purple-700 py-16">
         <div className="container mx-auto flex flex-wrap justify-around text-white text-center gap-8">
           <div>
@@ -63,7 +63,6 @@ const App = () => {
         </div>
       </section>
 
-      
       {/* --- Banner Section --- */}
       <header className="container mx-auto px-6 md:px-20 py-20 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 space-y-8 text-center md:text-left">
@@ -93,10 +92,19 @@ const App = () => {
           />
         </div>
       </header>
-
-
+      {/* --- Header Section (Premium Digital Tools) --- */}
+      <div className="text-center pt-16 pb-10">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          Premium Digital Tools
+        </h2>
+        <p className="text-gray-500 max-w-2xl mx-auto text-sm md:text-base leading-relaxed px-6">
+          Choose from our curated collection of premium digital products
+          designed to boost your productivity and creativity.
+        </p>
+      </div>
 
       {/* --- Main Toggling Section --- */}
+
       <main className="container mx-auto px-6 md:px-20 py-20">
         <div className="flex justify-center mb-20">
           <div className="inline-flex bg-gray-200 p-2 rounded-2xl">
